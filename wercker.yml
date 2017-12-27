@@ -37,7 +37,7 @@
          registry: https://hub.docker.com
          ports: 80 
          cmd: nginx -g 'daemon off';
- deploy-dev-qpp2:
+  deploy-dev-qpp2:
    box: node:latest
    steps:
      - wercker/add-ssh-key:
