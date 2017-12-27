@@ -18,8 +18,7 @@
 
  push-2-docker:
    box: nginx:latest
-   
-   steps:
+    steps:
      - script:
          name: mv the files required and clean image
          # include to install packages
