@@ -71,4 +71,9 @@
          name: Start all services/containers
          code: |
            ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST "cd ~/deployments; sudo /usr/local/bin/docker-compose -f docker-compose.yml start"
+     - script: 
+         name: Start all services/containers
+          code: |
+          ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST sudo docker container run --detach -p 80:80 --name ravi-linux devopscafe/amusement-park:current
+          
  
