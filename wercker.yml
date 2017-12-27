@@ -15,10 +15,9 @@
          code: |
            apt-get update
            apt-get install -y curl
-
- push-2-docker:
-   box: nginx:latest
-    steps:
+     push-2-docker:
+     box: nginx:latest
+     steps:
      - script:
          name: mv the files required and clean image
          # include to install packages
